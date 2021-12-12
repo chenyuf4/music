@@ -1,0 +1,297 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "react-jinke-music-player/lib/styles/index.less";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+//import fonts
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("./assets/fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("./assets/fonts/Inter-Bold.woff") format("woff");
+}
+
+//define less variables
+@theme-selected-color: #5773ff;
+@audio-player-light-bg-color: rgba(244, 244, 244, 0.7);
+
+//overwrite audio player default theme
+@primary-color: @theme-selected-color;
+@panel-bg-light: @audio-player-light-bg-color;
+@controller-bg-light: @audio-player-light-bg-color;
+@lists-panel-item-bg-light: @audio-player-light-bg-color;
+
+.react-jinke-music-player-main {
+  .audio-title {
+    font-family: "Inter-Regular" !important;
+    font-weight: 600;
+  }
+  .progress-bar {
+    background-color: transparent !important;
+    overflow: unset !important;
+  }
+  .react-jinke-music-player,
+  .react-jinke-music-player .music-player,
+  .react-jinke-music-player .music-player .music-player-controller {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .music-player-controller-setting {
+    font-family: "Inter-Regular" !important;
+    font-weight: 600 !important;
+    font-size: 80% !important;
+  }
+
+  .rc-slider-rail {
+    height: 2px;
+  }
+
+  .rc-slider-track {
+    height: 2px;
+  }
+
+  .rc-slider-step {
+    height: 2px;
+  }
+
+  .rc-slider-handle {
+    margin-top: -6px;
+  }
+}
+
+.react-jinke-music-player-main.light-theme {
+  .music-player-panel {
+    color: #656566 !important;
+  }
+}
+
+body,
+html {
+  font-family: "Inter-Regular";
+}
+
+.App {
+  height: 100vh;
+}
+
+//background colors
+.background-grey {
+  background-color: #e8ecef;
+}
+
+.background-lightgrey {
+  background-color: #f0f4f5;
+}
+
+.background-blue {
+  background-color: @theme-selected-color;
+}
+
+//fonts
+.inter-regular-font {
+  font-family: "Inter-Regular";
+}
+
+.inter-bold-font {
+  font-family: "Inter-Bold";
+}
+
+.roboto-font {
+  font-family: "Roboto";
+}
+
+.c-darkergrey {
+  color: #444e64;
+}
+
+.c-darkgrey {
+  color: #656566;
+}
+
+.c-lightgrey {
+  color: #9ea1a8;
+}
+
+.c-grey {
+  color: #a8b0be;
+}
+
+.c-blue {
+  color: @theme-selected-color;
+}
+
+.c-red {
+  color: #fd2a51;
+}
+
+.c-orange {
+  color: #fa5400;
+}
+
+// svg container
+.svg-container {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+// row gap of flex items
+.row-gap-0 {
+  row-gap: 0px;
+}
+
+.row-gap-1 {
+  row-gap: 3px;
+}
+
+.row-gap-2 {
+  row-gap: 4px;
+}
+
+.row-gap-3 {
+  row-gap: 6px;
+}
+
+.row-gap-4 {
+  row-gap: 12px;
+}
+
+.row-gap-5 {
+  row-gap: 16px;
+}
+
+.row-gap-6 {
+  row-gap: 20px;
+}
+
+// column- gap
+.col-gap-0 {
+  column-gap: 0px;
+}
+
+.col-gap-1 {
+  column-gap: 3px;
+}
+
+.col-gap-2 {
+  column-gap: 4px;
+}
+
+.col-gap-3 {
+  column-gap: 6px;
+}
+
+.col-gap-4 {
+  column-gap: 12px;
+}
+
+.col-gap-5 {
+  column-gap: 16px;
+}
+
+.col-gap-6 {
+  column-gap: 20px;
+}
+
+// letter space between text
+.letter-space-1 {
+  letter-spacing: 1px;
+}
+
+.letter-space-2 {
+  letter-spacing: 2px;
+}
+
+.letter-space-3 {
+  letter-spacing: 3px;
+}
+
+.letter-space-4 {
+  letter-spacing: 4px;
+}
+
+.letter-space-5 {
+  letter-spacing: 5px;
+}
+
+// img
+.img-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+// input
+input::placeholder {
+  font-family: "Inter-Regular";
+  font-weight: 600;
+  color: #9ea1a8;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.search-container {
+  border: 2px solid #e8ecef;
+  border-radius: 8px;
+  font-size: 90%;
+  text-indent: 16px;
+}
+
+// font size
+.fs-100 {
+  font-size: 100%;
+}
+
+.fs-95 {
+  font-size: 95%;
+}
+
+.fs-90 {
+  font-size: 90%;
+}
+
+.fs-85 {
+  font-size: 85%;
+}
+
+.fs-80 {
+  font-size: 80%;
+}
+
+.fs-75 {
+  font-size: 75%;
+}
+
+// border radius
+.border-radius-1 {
+  border-radius: 3px;
+}
+
+.border-radius-2 {
+  border-radius: 4px;
+}
+
+.border-radius-3 {
+  border-radius: 6px;
+}
+
+.border-radius-4 {
+  border-radius: 12px;
+}
+
+.border-radius-5 {
+  border-radius: 16px;
+}
+
+.border-radius-6 {
+  border-radius: 20px;
+}
+
+// cursor
+.cursor-pointer {
+  cursor: pointer;
+}
